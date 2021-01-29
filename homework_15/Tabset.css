@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(185, 185, 185);
+}
+#container .title {
+    display: none;    
+}
+
+.title-new {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3px;
+    margin-right: 3px;
+    margin-bottom: -1px;
+
+}
+.title-new.active {
+    background-color: rgb(148, 181, 219);
+    border: 1px solid rgb(16, 0, 102);
+    border-bottom: none;
+}
+
+.body {
+    display: none;
+}
+
+.active .body {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(148, 181, 219);
+
+}
+
