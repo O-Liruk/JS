@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(81, 87, 90);
+}
+.wraper {
+    max-width: 700px;
+    margin: 0 auto ;  
+}
+
+#information-list {
+    width: 500px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.list-item {
+    background: #e0dcdd;
+    border: 1px solid #0a0a0a;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#input {
+    width: 72%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 1.2;
+    border: 1px solid rgb(1, 60, 255);
+    border-radius: 6px;
+    margin-right: 10px;
+    text-indent: 20px;
+    outline: none;
+    margin-top: 20px;
+}
+#input:focus {
+    border: 2px solid #4b8303;
+}
+#button {
+    width: 20%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+    background: #020846;
+    border: 2px solid  #020846;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+#button:active {
+    background: #4e5bec;
+}
