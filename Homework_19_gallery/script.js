@@ -39,7 +39,7 @@ function renderAlbums(list){
     albumsEl.innerHTML = list
         .map((album) => getAlbumHtml(album))
         .join('');
-        console.log(list)
+        // console.log(list)
 }
 
 function getAlbumHtml(album){
@@ -68,7 +68,7 @@ function renderPhotos(list){
     photosEl.innerHTML = list
         .map((photo) => getPhotoHtml(photo))
         .join('');
-        console.log(list)
+        // console.log(list)
 }
 
 function getPhotoHtml(photo){
