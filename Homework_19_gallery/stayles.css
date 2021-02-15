@@ -1,0 +1,25 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+#albums {
+    background: rgb(63, 63, 63);
+    width: 35%;
+}
+.album {
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid darkkhaki;
+    padding-left: 5px; 
+    cursor: pointer;
+}
+
+.album:hover {
+    background: rgb(123, 130, 163);
+}
+#photos {
+    width: 55%;
+    margin-left: 15px;
+}
