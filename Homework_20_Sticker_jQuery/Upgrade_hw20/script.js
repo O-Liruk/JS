@@ -31,36 +31,19 @@ function onSteckerListElClick(e) {
   deleteSticker(($el.data('id')))
 }
 
-// function onSteckerListElClick(e){
-//   switch (true) {
-//     case e.target.classList.contains(DELETE_STICKER_CLASS):
-//         deleteSticker(e.target.parentElement.dataset.id)
-//         break
-//   }
-// }
-
 function onSteckerListElFocusout(e) {
   const $element = $(this);
 
   updateSticker($element.parent().data('id'), {
     description: $element.val(),
   })
-
-  // updateSticker(
-  //   $el.parentElement.dataset.id,
-  //   $el.name,
-  //   $el.value
-  // )
-
 }
 
 function updateSticker(id, name) {
   const sticker = list.find((el) => el.id == id)
 
   Object.keys(name).forEach((key) => (sticker[key] = name[key]));
-
-  // sticker[name] = value
-
+  
   fetch(`${URL}/${id}`, {
     method: 'PUT',
     headers: {
