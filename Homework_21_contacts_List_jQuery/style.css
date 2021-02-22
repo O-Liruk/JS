@@ -1,0 +1,15 @@
+#form{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.button{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+.my-table{
+    margin: 0 auto;
+}
+td:last-child{
+    text-align: center;
+}

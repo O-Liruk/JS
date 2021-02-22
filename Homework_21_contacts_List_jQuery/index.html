@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous" defer></script> 
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>  
+      <script src="script.js" defer></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="./Skeleton-2.0.4/normalize.css "/>
+      <link rel="stylesheet" href="./Skeleton-2.0.4/skeleton.css " />
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <div id="form">
+      <div id="wrap-button">
+        <button id="addBtn" class="button" type="submit">Add Contact</button>
+      </div>
+      <table id="table" class="my-table">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Surname</td>
+            <td>Phone</td>
+            <td>Actions</td>
+          </tr>
+        </thead>
+        <tbody id="contactList" class="contact-list"></tbody>
+      </table>
+    </div>
+    <div id="form-modal" title="New contact">
+      <form id="contact-form">
+        <fieldset>
+          <label for="id"></label>
+          <input type="hidden" id="contactId" name="name"/>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter name" class="text ui-widget-content ui-corner-all"/>
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="surname" placeholder="Enter surname" class="text ui-widget-content ui-corner-all"/>
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" placeholder="Enter phone" class="text ui-widget-content ui-corner-all"/>
+          <!-- Allow form submission with keyboard without duplicating the dialog button -->
+          <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+      </form>
+    </div>
+    <script type="text/template" id="contactTemplate">
+      <tr class="contact" data-id = "{{id}}">
+          <td>{{name}}</td>
+          <td>{{surname}}</td>
+          <td>{{phone}}</td>
+          <td>
+            <button type="button" class="edit-btn">Edit</button>
+            <button type="button" class="delete-btn">Delete</button>
+          </td>
+      </tr>
+    </script>
+  </body>
+</html>
