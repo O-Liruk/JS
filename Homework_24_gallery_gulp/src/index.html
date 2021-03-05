@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../src/styles/normalize.css" />
+        <link rel="stylesheet" href="../src/styles/skeleton.css" />
+        <link rel="stylesheet" href="../src/styles/styles.css" />
+        <script src="../src/scripts/http.js" defer></script>
+        <script src="../src/scripts/app.js" defer></script>
+        <title>Photo Gallery</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="albums" class="albums three columns"></div>
+            <div id="photos" class="photos nine columns"></div>
+        </div>
+        <script type="text/template" id="photoItemTemplate">
+            <img class="photo-item" src="{{url}}" alt="{{title}}"/>
+        </script>
+        <script type="text/template" id="albumItemTemplate">
+            <div class="album-item" data-id="{{id}}">{{title}}</div>
+        </script>
+    </body>
+</html>
