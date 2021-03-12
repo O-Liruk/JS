@@ -1,0 +1,40 @@
+#taskList{
+   
+    margin: 0 auto;
+}
+
+.delete-btn {
+    cursor: pointer;
+}
+.new-student-section {
+    display: none;
+}
+
+.new-student-section.show { 
+    display: inline-block;
+}
+.student_mark{
+    width: 50px;
+    margin-left: 20px;
+}
+.task_student{
+    display: flex;
+    flex-wrap: wrap;
+}
+.delete-btn{
+    border: 1px solid #000;
+    margin-left: 30px;
+    width: 30px;
+    text-align: center;
+}
+.task_student{
+    margin: 10px;
+}
+#add_student{
+    margin: 10px;
+    width: 40px;
+    text-align: center;
+    background-color: burlywood;
+   
+
+}
