@@ -1,0 +1,15 @@
+.add-student-form {
+    display: none;
+}
+
+.show-form .add-student-form {
+    display: block;
+}
+
+.show-form .show-form-btn {
+    display: none;
+}
+
+.show-form-btn{
+    background-color: cornflowerblue;
+}
