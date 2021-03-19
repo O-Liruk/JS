@@ -5,7 +5,7 @@ export default class Chat {
         this.config = config;
     }
 
-    initConnection(name) {
+    initConnection() {
         this.socket = new WebSocket(CONNECTION_URL);
         this.socket.onmessage = this.onSocketMessage.bind(this);
     }
