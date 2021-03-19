@@ -1,0 +1,18 @@
+.log div {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.log div.message {
+    opacity: 1;
+}
+#chatForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+#dialog{
+    margin: 20px;
+}
+#author, #message, #sendBtn{
+    margin: 10px;
+}
